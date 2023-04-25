@@ -3,6 +3,7 @@
 using namespace std;
 
 class GiaVe {
+    friend class HoaDon;
     int chieucao;
     int tuoi;
     long gia;
@@ -12,7 +13,7 @@ public:
     int getChieuCao ();
     int getTuoi ();
     long gia ();
-}
+};
 
 void GiaVe::setChieuCao (int chieucao) {
     cout << "Vui long nhap chieu cao" << endl;
