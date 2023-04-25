@@ -1,5 +1,8 @@
+#pragma once
+
 #include <iostream>
 #include "HoaDon.cpp"
+
 using namespace std;
 
 class GiaVe {
