@@ -9,7 +9,6 @@ class Order
     //friend class Kho;
 public:
     void setSoluong (int);
-    void setSomon(int);
     int getSomon() const;
     int getSoluong () const;
     void Menu();
