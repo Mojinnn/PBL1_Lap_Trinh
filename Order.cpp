@@ -9,6 +9,7 @@ class Order
     //friend class Kho;
 public:
     void setSoluong (int);
+    void setSomon(int);
     int getSomon() const;
     int getSoluong () const;
     void Menu();
@@ -209,7 +210,7 @@ int main()
     Order k1;
     k1.Menu();
     string nhan;
-    cout<<"\n\nNhan n de order mon";
+    cout<<"\n\nNhan n de order mon: ";
     cin>>nhan;
        if (nhan == "n")
            {
