@@ -1,7 +1,21 @@
-#include <iostream>
-#include <string.h>
-#include "KhachHang.h"
+#ifndef KHACHHANG_H
+#define KHACHHANG_H
 
+class KhachHang {
+    char* ten;
+    int chieucao;
+    int tuoi;
+    long gia;
+public:
+    ~KhachHang ();
+    void setTen ();
+    void setChieuCao ();
+    void setTuoi ();
+    char* getTen ();
+    int getChieuCao ();
+    int getTuoi ();
+    long getGia ();
+};
 
 using namespace std;
 
@@ -61,4 +75,4 @@ long KhachHang::getGia () {
     return gia;
 }
 
-
+#endif
