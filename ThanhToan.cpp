@@ -4,6 +4,16 @@
 
 using namespace std;
 
+class ThanhToan : public KhachHang {
+    long thueVAT;
+    long phi;
+public:
+    void setThueVAT ();
+    void setPhi ();
+    long getThueVAT ();
+    long getPhi ();
+    long ThanhTien ();
+};
 
 void ThanhToan::setThueVAT () {
     thueVAT = (KhachHang::getGia())*(10/100);

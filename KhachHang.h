@@ -1,11 +1,12 @@
 #ifndef KHACHHANG_H
 #define KHACHHANG_H
 
+using namespace std;
+
 class KhachHang {
     char* ten;
     int chieucao;
     int tuoi;
-    long gia;
 public:
     ~KhachHang ();
     void setTen ();
@@ -14,11 +15,7 @@ public:
     char* getTen ();
     int getChieuCao ();
     int getTuoi ();
-    long getGia ();
 };
-
-using namespace std;
-
 
 KhachHang::~KhachHang () {
     delete [] ten;
@@ -55,24 +52,6 @@ int KhachHang::getChieuCao () {
 
 int KhachHang::getTuoi () {
     return tuoi;
-}
-
-long KhachHang::getGia () {
-    if (tuoi <= 12) { // tre em duoi 12 tuoi
-        if (chieucao <= 120) {
-            gia = 0; // duoi 1m2: mien phi
-        }
-        else if (chieucao <= 150) {
-            gia = 120000; // tren 1m2, duoi 1m5: 120k
-        }
-        else {
-            gia = 180000; // tren 1m5: 180k
-        }
-    }
-    else {
-        gia = 200000; // nguoi lon: 200k
-    }
-    return gia;
 }
 
 #endif

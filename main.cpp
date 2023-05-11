@@ -12,37 +12,33 @@ void NhapThongTin (KhachHang &kh) {
     kh.setChieuCao ();
 }
 
-void XuatThongTin (KhachHang &kh) {
+void XuatThongTin (KhachHang &kh, ThanhToan &tt) {
     cout << "--------------------------------------" << endl;
     cout << "Ten: " << kh.getTen () << endl;
     cout << "Tuoi: " << kh.getTuoi () << endl;
     cout << "Chieu cao: " << kh.getChieuCao () << endl;
-    cout << "Gia: " << kh.getGia () << endl;
+    cout << "Tong Tien: " << tt.ThanhTien () << endl;
 }
 
 int main () {
     int soluong;
     KhachHang *kh;
-
+    ThanhToan *tt;
 
     cout << "Nhap so luong khach hang: ";
     cin >> soluong;
 
     kh = new KhachHang [soluong];
+    tt = new ThanhToan [soluong];
 
     for (int i = 0; i < soluong; i++) {
         NhapThongTin (kh[i]);
-    }
-    
-    for (int i = 0; i < soluong; i++) {
-        XuatThongTin (kh[i]);
+        // tinhTien (tt[i]);
+        XuatThongTin (kh[i], tt[i]);
     }
 
     delete [] kh;
-
-
-    // cout << "Quy khach can tra so tien la: " << tt1.ThanhTien () << endl;
+    delete [] tt;
 
     return 0;
 }
-// $ g++ KhachHang.cpp ThanhToan.cpp main.cpp -o restaurant

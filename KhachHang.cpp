@@ -5,6 +5,21 @@
 
 using namespace std;
 
+class KhachHang {
+    char* ten;
+    int chieucao;
+    int tuoi;
+    long gia;
+public:
+    ~KhachHang ();
+    void setTen ();
+    void setChieuCao ();
+    void setTuoi ();
+    char* getTen ();
+    int getChieuCao ();
+    int getTuoi ();
+    long getGia ();
+};
 
 KhachHang::~KhachHang () {
     delete [] ten;

@@ -1,21 +1,44 @@
-#ifndef KHACHHANG_H
-#define KHACHHANG_H
+#ifndef THANHTOAN_H
+#define THANHTOAN_H
+
+using namespace std;
 
 class ThanhToan : public KhachHang {
-    long thueVAT;
+    long gia;
+    long thue;
     long phi;
+    long tong;
 public:
-    void setThueVAT ();
+    void setGia();
+    void setThue ();
     void setPhi ();
-    long getThueVAT ();
+    void tinhTong ();
+    long getGia ();
+    long getThue ();
     long getPhi ();
     long ThanhTien ();
 };
 
-using namespace std;
+void ThanhToan::setGia () {
+    gia = 0;
+    if (KhachHang::getTuoi() <= 12) { // tre em duoi 12 tuoi
+        if (KhachHang::getChieuCao() <= 120) {
+            gia = 0; // duoi 1m2: mien phi
+        }
+        else if (KhachHang::getChieuCao() <= 150) {
+            gia = 400000; // tren 1m2, duoi 1m5: 400k
+        }
+        else {
+            gia = 450000; // tren 1m5: 450k
+        }
+    }
+    else {
+        gia = 500000; // nguoi lon: 500k
+    }
+}
 
-void ThanhToan::setThueVAT () {
-    thueVAT = (KhachHang::getGia())*(10/100);
+void ThanhToan::setThue () {
+    thue = (getGia()* 0.1);
 }
 
 void ThanhToan::setPhi () {
@@ -23,16 +46,28 @@ void ThanhToan::setPhi () {
     cin >> phi;
 }
 
+void ThanhToan::tinhTong () {
+    setGia ();
+    setThue ();
+    setPhi();
+    tong = gia + thue + phi;
+}
+
+long ThanhToan::getGia () {
+    return gia;
+}
+
 long ThanhToan::getPhi () {
     return phi;
 }
 
-long ThanhToan::getThueVAT () {
-    return thueVAT;
+long ThanhToan::getThue () {
+    return thue;
 }
 
 long ThanhToan::ThanhTien () {
-    return (KhachHang::getGia() + phi + thueVAT);
+    tinhTong ();
+    return tong;
 }
 
 #endif
