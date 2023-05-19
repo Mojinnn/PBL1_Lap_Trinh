@@ -1,6 +1,8 @@
 #include <iostream>
 #include <ctime>
+
 using namespace std;
+
 int main ()
 {
     char *dt= new char[10];

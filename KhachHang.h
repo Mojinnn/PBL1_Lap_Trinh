@@ -4,32 +4,24 @@
 using namespace std;
 
 class KhachHang {
-    char* ten;
+    string SDT;
     int chieucao;
     int tuoi;
 public:
-    ~KhachHang ();
-    void setTen ();
+    void setSDT ();
     void setChieuCao ();
     void setTuoi ();
-    char* getTen ();
-    int getChieuCao ();
-    int getTuoi ();
+    const string getSDT () const;
+    const int getChieuCao () const;
+    const int getTuoi () const;
+    friend void setGiaVe (const KhachHang &kh);
 };
 
-KhachHang::~KhachHang () {
-    delete [] ten;
-}
-
-void KhachHang::setTen () {
-    char* name;
-    name = new char [50];
-    cout << "Nhap ten: ";
-    cin.ignore ();
-    cin.getline (name, 50);
-    ten = new char [strlen(name) + 1];
-    strcpy (ten, name);
-    delete [] name;
+void KhachHang::setSDT () {
+    do {
+        cout << "Nhap SDT: ";
+        cin >> SDT;
+    } while (SDT.length() != 10);
 }
 
 void KhachHang::setChieuCao () {
@@ -42,15 +34,15 @@ void KhachHang::setTuoi () {
     cin >> tuoi;
 }
 
-char* KhachHang::getTen () {
-    return ten;
+const string KhachHang::getSDT () const {
+    return SDT;
 }
 
-int KhachHang::getChieuCao () {
+const int KhachHang::getChieuCao () const {
     return chieucao;
 }
 
-int KhachHang::getTuoi () {
+const int KhachHang::getTuoi () const {
     return tuoi;
 }
 
