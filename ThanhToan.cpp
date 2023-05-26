@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class ThanhToan : public KhachHang {
+class ThanhToan {
     long thueVAT;
     long phi;
 public:

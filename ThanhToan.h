@@ -7,6 +7,7 @@ class ThanhToan {
     long giave;
     long thue;
     long phi;
+    static long tongTatCa;
 public:
     void setPhi ();
     void setGiaVe (const KhachHang& kh);
@@ -14,7 +15,10 @@ public:
     const long getThue () const;
     const long getPhi () const;
     const long ThanhTien () const;
+    static long getTongTatCa ();
 };
+
+long ThanhToan::tongTatCa = 0;
 
 void ThanhToan::setPhi () {
     cout << "Phi (neu co): ";
@@ -50,9 +54,14 @@ const long ThanhToan::getPhi () const {
     return phi;
 }
 
-
 const long ThanhToan::ThanhTien () const {
-    return (getGiaVe () + getThue () + getPhi ());
+    long tong = getGiaVe () + getThue () + getPhi ();
+    tongTatCa += tong;
+    return tong;
+}
+
+long ThanhToan::getTongTatCa () {
+    return tongTatCa;
 }
 
 #endif
