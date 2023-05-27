@@ -75,7 +75,6 @@ void GhiFile (KhachHang *kh, ThanhToan *tt, int &soluong) {
     file.close();
 }
 
-
 //ham main
 int main () {
     int soluong;
@@ -99,42 +98,3 @@ int main () {
 
     return 0;
 }
-// SDT: 0123123123
-// Tuoi: 12
-// Chieu cao: 120
-// Ve: 0
-// Phi: 10000
-// Thue: 0
-// Thanh Tien: 10000
-// --------------------------------------
-// SDT: 0123321321
-// Tuoi: 12
-// Chieu cao: 150
-// Ve: 400000
-// Phi: 10000
-// Thue: 40000
-// Thanh Tien: 450000
-// --------------------------------------
-// SDT: 0987654321
-// Tuoi: 12
-// Chieu cao: 160
-// Ve: 450000
-// Phi: 10000
-// Thue: 45000
-// Thanh Tien: 505000
-// --------------------------------------
-// SDT: 0123132456
-// Tuoi: 17
-// Chieu cao: 170
-// Ve: 500000
-// Phi: 10000
-// Thue: 50000
-// Thanh Tien: 560000
-// --------------------------------------
-// SDT: 0123456789
-// Tuoi: 17
-// Chieu cao: 180
-// Ve: 500000
-// Phi: 0
-// Thue: 50000
-// Thanh Tien: 550000
