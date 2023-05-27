@@ -9,10 +9,8 @@ using namespace std;
 
 //ham hien thi thoi gian
 string ThoiGian () {
-    char *dt= new char[10];
     time_t now = time(0);
-    dt = ctime(&now);
-    string currentTime(dt);
+    string currentTime = ctime(&now);
     return currentTime;
 }
 
@@ -57,18 +55,18 @@ void XuatThongTin (KhachHang *kh, ThanhToan *tt, int &soluong) {
 void GhiFile (KhachHang *kh, ThanhToan *tt, int &soluong) {
     ofstream file;
     file.open("HoaDon.txt", ios::app);
+        file << "----------------------------------------" << endl;
+        file << "------ Thoi gian: "<< ThoiGian() << endl;
         for (int i = 0; i < soluong; i++) {
-            file << "----------------------------------------" << endl;
-            file << "------ Thoi gian: "<< ThoiGian() << endl;
             file << "SDT: " << kh[i].getSDT () << endl;
             file << "Tuoi: " << kh[i].getTuoi () << endl;
             file << "Chieu cao: " << kh[i].getChieuCao () << endl;
             file << "Ve: " << tt[i].getGiaVe () << endl;
             file << "Phi: " << tt[i].getPhi () << endl;
             file << "Thue: " << tt[i].getThue () << endl;
-            file << "Thanh Tien: " << tt[i].ThanhTien () << endl;
+            // file << "Thanh Tien: " << tt[i].ThanhTien () << endl;
         }
-        cout << "--------------------------------------" << endl;
+        file << "--------------------------------------" << endl;
         file << "Khuyen Mai: " << KhuyenMai (kh, tt, soluong) << endl;
         file << "TONG TIEN: " << tt[soluong - 1].getTongTatCa () - KhuyenMai (kh, tt, soluong) << endl;
         file << "------------------------------------------------------------------" << endl;
