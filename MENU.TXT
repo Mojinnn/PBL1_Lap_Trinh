@@ -1,0 +1,78 @@
+                                         _____          _____     ___________    _____      ___     ____       ____                                                            
+                                        |     \        /     |   |           |  |     \    |   |   |    |     |    |                             
+                                        |      \      /      |   |    _______|  |      \   |   |   |    |     |    |                                                  
+                                        |   |   \    /   |   |   |   |_______   |   |   \  |   |   |    |     |    |                                                  
+                                        |   |\   \  /   /|   |   |    _______|  |   |\   \ |   |   |    |     |    |                                             
+                                        |   | \   \/   / |   |   |   |_______   |   | \   \|   |   |    \_____/    |                                              
+                                        |   |  \      /  |   |   |           |  |   |  \   |   |   \               /                                         
+                                        |___|   \____/   |___|   |___________|  |___|   \______|    \_____________/                                                                          
+  
+----------------------------------------------------------------------MON KHAI VI---------------------------------------------------------------------------
+     1 Salad Ceasar
+     2 Salad Chicken
+     3 Salad Napoli
+     4 Salad Sorrento
+     5 Khoai tay chien
+     6 Ga vien chien
+     7 Bap nuong bo
+     8 Khoai lang nuong bo
+     9 Dau hu chien gion
+     10 Nam goi giay bac
+     11 Rong bien nuong gion
+     12 Nam dong co bo toi
+--------------------------------------------------------------------CAC LOAI SOT----------------------------------------------------------------------------
+     13 Sot King BBQ
+     14 Sot cay
+     15 Sot Guang Yang
+     16 Sot thit Han Quoc
+     17 Sot toi
+     18 Sot dac biet
+     19 Sot oi chuong do
+ ----------------------------------------------------------------------NUONG--------------------------------------------------------------------------------
+     20 Bap bo
+     21 Ba chi bo
+     22 Than vai bo
+     23 Than lung bo
+     24 Co bo My
+     25 Gau bo My
+     26 De suon bo
+     27 Suon bo
+     28 Ba chi bo
+     29 Bo uop cay
+     30 Bo cuon pho mai
+     31 Bo cuon nam kim cham
+     32 Bo xien rau cu
+     33 Suon heo
+     34 Ma heo
+     35 Ba chi heo
+     36 Nac dam
+     37 Nam heo uop sa te
+     38 Canh ga uop ngu vi
+     39 Dui ga uop chao
+     40 Thit dui ga cuon la dua
+     41 Ma heo uop Miso
+     42 Hau nuong mo hanh
+     43 Tom the
+     44 Bach tuoc
+     45 Muc ong sot muoi ot
+     46 Ca basa nuong giay bac
+     47 So diep bo toi
+     48 Hau nuong pho mai
+     49 Ca bo da nuong muoi ot
+     50 Muc la uop sa te
+     51 Tom muoi ot
+     52 Ca hoi giay bac
+     53 Tom hum bo toi
+     54 Tom hum pho mai
+----------------------------------------------------------------------LAU-----------------------------------------------------------------------------------
+     55 Lau thai Tomyum
+     56 Lau Kimchi
+     57 Lau Bulgogi
+-----------------------------------------------------------------MON TRUYEN THONG---------------------------------------------------------------------------
+     58 Canh gan bo Han Quoc
+     59 Canh suon bo
+     60 Canh kim chi
+     61 Com tron
+     62 Canh rong bien
+     63 Canh bo om cay
+     64 Bap nuong pho mai
