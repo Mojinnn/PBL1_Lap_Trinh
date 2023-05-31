@@ -57,7 +57,7 @@ void GhiHoaDon (KhachHang *kh, ThanhToan *tt, int &soluong) {
     file.close();
 }
 
-//ham ghi hoa don va ghi doanh thu
+//ham doc hoa don va ghi doanh thu
 void DocHoaDonVaGhiDoanhThu () {
     string line;
     ifstream file;
