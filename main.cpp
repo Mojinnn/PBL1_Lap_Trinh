@@ -36,24 +36,7 @@ long KhuyenMai (KhachHang *kh, ThanhToan *tt, int &soluong) {
     return khuyenmai;
 }
 
-//ham Xuat thong tin doi tuong
-void XuatThongTin (KhachHang *kh, ThanhToan *tt, int &soluong) {
-    for (int i = 0; i < soluong; i++) {
-        cout << "--------------------------------------" << endl;
-        cout << "SDT: " << kh[i].getSDT () << endl;
-        cout << "Tuoi: " << kh[i].getTuoi () << endl;
-        cout << "Chieu cao: " << kh[i].getChieuCao () << endl;
-        cout << "Ve: " << tt[i].getGiaVe () << endl;
-        cout << "Phi: " << tt[i].getPhi () << endl;
-        cout << "Thue: " << tt[i].getThue () << endl;
-        cout << "Thanh Tien: " << tt[i].ThanhTien () << endl;
-    }
-    cout << "--------------------------------------" << endl;
-    cout << "Khuyen Mai: " << KhuyenMai (kh, tt, soluong) << endl;
-    cout << "TONG TIEN: " << tt[soluong - 1].getTongTatCa () - KhuyenMai (kh, tt, soluong) << endl;
-}
-
-//ham ghi file
+//ham ghi hoa don
 void GhiHoaDon (KhachHang *kh, ThanhToan *tt, int &soluong) {
     ofstream file;
     file.open("HoaDon.txt", ios::trunc);
@@ -74,6 +57,7 @@ void GhiHoaDon (KhachHang *kh, ThanhToan *tt, int &soluong) {
     file.close();
 }
 
+//ham ghi hoa don va ghi doanh thu
 void DocHoaDonVaGhiDoanhThu () {
     string line;
     ifstream file;
@@ -90,6 +74,7 @@ void DocHoaDonVaGhiDoanhThu () {
     file.close();
 }
 
+//ham chuc nang cua thu ngan
 void ThuNgan (KhachHang *kh, ThanhToan *tt) {
     int soluong;
     int n;
@@ -104,7 +89,6 @@ void ThuNgan (KhachHang *kh, ThanhToan *tt) {
             kh = new KhachHang [soluong];
             tt = new ThanhToan [soluong];
             NhapThongTin (kh, tt, soluong);
-            XuatThongTin (kh, tt, soluong);
             GhiHoaDon (kh, tt, soluong);
         }
         else if (n == 2) {
@@ -119,6 +103,7 @@ void ThuNgan (KhachHang *kh, ThanhToan *tt) {
     }
 }
 
+//ham lich su ban hang
 void LICH_SU_BAN_HANG()
 {
     string line;
@@ -132,6 +117,7 @@ void LICH_SU_BAN_HANG()
     Read.close();
 };
 
+//ham cho phuc vu
 void PhucVu (MENU *m, Order *d) {
     int n;
     int a = 1;
