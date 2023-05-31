@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <string>
 #include <string.h>
@@ -182,55 +183,3 @@ void Order::XuatOrder()
     Cls.open("XuatOrder.txt", ios::out|ios::trunc);
     Cls.close();
 };
-void LICH_SU_BAN_HANG()
-{
-    string line;
-    fstream Read;
-    Read.open("LICHSUBANHANG.txt", ios::in);
-    while (!Read.eof())
-    {
-        getline(Read, line);
-        cout<<line<<"\n";
-    }
-    Read.close();
-};
-int main ()
-{
-	MENU *m = new MENU();
-    Order *d = new Order();
-	cout<<"=============== PRESS THE CORRECT NUMBER =============== \n\n\n               1 -> XEM MENU \n\n               2 -> THEM MON AN VAO MENU \n\n               3 -> TRUY XUAT LICH SU BAN HANG\n\n";
-	int n, a=1;
-    while (a > 0)
-	  {
-        cin>>n;
-	   system("cls");
-	   if (n==1)
-	     {  
-            m->XemMenu();
-            string nhan;
-            cout<<"BAN: ";cin>>soban;
-            while (soban < 1 || soban > 25)
-            {
-                cout<<"\nERROR! TRY AGAIN\n";
-                cout<<"BAN: ";
-                cin >> soban;
-            };
-            cout<<"\n\nPRESS ANY KEY TO ORDER ";
-            cin>>nhan;
-            d->ChonMenu();
-            d->XuatOrder();
-            break;
-	     }
-	      else if (n==2)
-	         {
-                m->ThemMenu();
-                break;
-		     }
-             else if(n==3)
-                {LICH_SU_BAN_HANG(); }
-		          else {cout<<"ERROR! TRY AGAIN \n\n\n               1 -> XEM MENU \n\n               2 -> THEM MON AN VAO MENU \n\n               3 -> TRUY XUAT LICH SU BAN HANG\n\n";}
-      };      
-	delete m;
-    delete [] d;
-	return 0;	
-}

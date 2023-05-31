@@ -4,6 +4,7 @@
 #include <string.h>
 #include "KhachHang.h"
 #include "ThanhToan.h"
+#include "MENU_Order.cpp"
 
 using namespace std;
 
@@ -26,6 +27,7 @@ void NhapThongTin (KhachHang *kh, ThanhToan *tt, int &soluong) {
     }
 }
 
+//khuyenmai
 long KhuyenMai (KhachHang *kh, ThanhToan *tt, int &soluong) {
     long khuyenmai;
     if (soluong >= 5) {
@@ -72,6 +74,51 @@ void GhiFile (KhachHang *kh, ThanhToan *tt, int &soluong) {
     file.close();
 }
 
+void LICH_SU_BAN_HANG()
+{
+    string line;
+    fstream Read;
+    Read.open("LICHSUBANHANG.txt", ios::in);
+    while (!Read.eof())
+    {
+        getline(Read, line);
+        cout<<line<<"\n";
+    }
+    Read.close();
+};
+
+void MenuOrder (MENU *m, Order *d, int n, int a = 1) {
+    while (a > 0) {
+        cin>>n;
+	    system("cls");
+	    if (n==1) {  
+            m->XemMenu();
+            string nhan;
+            cout<<"BAN: ";cin>>soban;
+            while (soban < 1 || soban > 25) {
+                cout<<"\nERROR! TRY AGAIN\n";
+                cout<<"BAN: ";
+                cin >> soban;
+            };
+            cout<<"\n\nPRESS ANY KEY TO ORDER ";
+            cin>>nhan;
+            d->ChonMenu();
+            d->XuatOrder();
+            break;
+	    }
+	    else if (n==2) {
+            m->ThemMenu();
+            break;
+	    }
+        else if(n==3) {
+            LICH_SU_BAN_HANG(); 
+        }
+	    else {
+            cout<<"ERROR! TRY AGAIN \n\n\n               1 -> XEM MENU \n\n               2 -> THEM MON AN VAO MENU \n\n               3 -> TRUY XUAT LICH SU BAN HANG\n\n";
+        }
+    };
+}
+
 //ham main
 int main () {
     int soluong;
@@ -89,6 +136,18 @@ int main () {
     XuatThongTin (kh, tt, soluong);
 
     GhiFile (kh, tt, soluong);
+
+    MENU *m = new MENU();
+    Order *d = new Order();
+	cout<<"=============== PRESS THE CORRECT NUMBER =============== \n\n\n               1 -> XEM MENU \n\n               2 -> THEM MON AN VAO MENU \n\n               3 -> TRUY XUAT LICH SU BAN HANG\n\n";
+	
+    int n;
+    int a = 1;
+
+    MenuOrder (m, d, n, a);
+
+	delete m;
+    delete d;
 
     delete [] kh;
     delete [] tt;
