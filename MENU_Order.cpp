@@ -48,18 +48,18 @@ void MENU::ThemMenu()
 		stt++;
 	};
 	somon = stt -14;
-    cout <<"========== THEM MON AN VAO MENU ==========\n";
+    cout <<"========== Them mon an vao Menu ==========\n";
 	check.close();
 	ofstream add;
 	add.open("MENU.TXT", ios::app);
     while (somon > 0)
 	{
         add << "\n     "<< somon +1<< " ";
-        cout<<"\n \nNHAP TEN MON: ";
+        cout<<"\n \nNhap ten mon: ";
 	    MENU::setTenmon();
 	    add<<getTenmon();
-	    cout<<"DA THEM MON: "<<getTenmon()<<"\n";
-        cout<<"\n \nDO YOU WANT TO CONTINUE ?   (y/n)  ";
+	    cout<<"Da them mon: "<<getTenmon()<<"\n";
+        cout<<"\n \nBan co muon tiep tuc ?   (y/n)  ";
         cin >> tap;
             if (tap == "y") 
                {
@@ -120,7 +120,7 @@ void Order::ChonMenu()
     savetofile << "---------- Thoi gian: "<<time();
     savetofile.close();
     cout<<"------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
-    cout<<"\n     NHAP SO THU TU VA SO LUONG MON AN \n\n";  
+    cout<<"\n     Nhap so thu tu va so luong mon an \n\n";  
     while ( n > 0)
       {
         fstream Read;
@@ -147,16 +147,16 @@ void Order::ChonMenu()
         Xuat_Order.open("XuatOrder.txt", ios::app);
         Xuat_Order << tenmon << " x "<< getSoluong() << "\n";
         Xuat_Order.close();
-        cout<<"PRESS 1 TO CONTINUE --- PRESS 2 TO STOP: ";
+        cout<<"Nhan 1 de tiep tuc --- Nhan 2 de dung lai: ";
         cin>>tap;
         if (tap == "1") 
            {
-            cout<<"\n\n     NHAP SO THU TU VA SO LUONG MON AN \n";
+            cout<<"\n\n     Nhap so thu tu va so luong mon an \n";
             continue; 
             }
               else 
               {
-                cout<<"STOP \n";
+                cout<<"Dung \n";
                 break;
               };                
  };
@@ -169,10 +169,10 @@ void Order::XuatOrder()
     string line;
     system("cls");
     fstream Xuat_Order;
-    cout<<"========== BAN: "<<soban<<" \n";
+    cout<<"========== Ban: "<<soban<<" \n";
     Xuat_Order.open("XuatOrder.txt", ios::in);
     cout << "---------- Thoi gian: "<<time();
-    cout<<"\n \nDANH SACH NHUNG MON AN DA CHON: \n";
+    cout<<"\n \nDanh sach mon an da chon: \n";
     while (!Xuat_Order.eof())
     {
     getline(Xuat_Order, line);

@@ -54,9 +54,9 @@ void XuatThongTin (KhachHang *kh, ThanhToan *tt, int &soluong) {
 }
 
 //ham ghi file
-void GhiFile (KhachHang *kh, ThanhToan *tt, int &soluong) {
+void GhiHoaDon (KhachHang *kh, ThanhToan *tt, int &soluong) {
     ofstream file;
-    file.open("HoaDon.txt", ios::app);
+    file.open("HoaDon.txt", ios::trunc);
         file << "------ Thoi gian: "<< ThoiGian() << endl;
         for (int i = 0; i < soluong; i++) {
             file << "----------------------------------------" << endl;
@@ -74,6 +74,51 @@ void GhiFile (KhachHang *kh, ThanhToan *tt, int &soluong) {
     file.close();
 }
 
+void DocHoaDonVaGhiDoanhThu () {
+    string line;
+    ifstream file;
+    file.open("HoaDon.txt", ios::in);
+        cout << "------ Thoi gian: "<< ThoiGian() << endl;
+        while (!file.eof()) {
+            getline (file, line);
+            cout << line << endl;
+            ofstream doanhthu;
+            doanhthu.open ("doanhthu.txt", ios::app);
+                doanhthu << line << endl;
+            doanhthu.close ();
+        }
+    file.close();
+}
+
+void ThuNgan (KhachHang *kh, ThanhToan *tt) {
+    int soluong;
+    int n;
+    int a = 1;
+    while (a > 0) {
+        cout << "=============== Chuc nang cua ban =============== \n\n\n               1 -> Nhap thong tin khach hang \n\n               2 -> In hoa don \n\n               3 -> Ket thuc\n\n";
+        cout << "Ban muon lam gi: ";
+        cin >> n;
+        if (n == 1) {
+            cout << "Nhap so luong khach hang: ";
+            cin >> soluong;
+            kh = new KhachHang [soluong];
+            tt = new ThanhToan [soluong];
+            NhapThongTin (kh, tt, soluong);
+            XuatThongTin (kh, tt, soluong);
+            GhiHoaDon (kh, tt, soluong);
+        }
+        else if (n == 2) {
+            DocHoaDonVaGhiDoanhThu ();
+        }
+        else if (n == 3) {
+            break;
+        }
+        else {
+            cout << "Loi! Thu lai \n\n\n               1 -> Nhap thong tin khach hang va tinh tien \n\n               2 -> In hoa don ban hang \n\n               3 -> Ket thuc\n\n";
+        }
+    }
+}
+
 void LICH_SU_BAN_HANG()
 {
     string line;
@@ -87,64 +132,67 @@ void LICH_SU_BAN_HANG()
     Read.close();
 };
 
-void MenuOrder (MENU *m, Order *d, int n, int a = 1) {
+void PhucVu (MENU *m, Order *d) {
+    int n;
+    int a = 1;
     while (a > 0) {
+        cout<<"=============== Chuc nang cua ban =============== \n\n\n               1 -> Xem Menu \n\n               2 -> Them mon an vao menu \n\n               3 -> Truy xuat lich su ban hang\n\n               4 -> Ket thuc\n\n";
+        cout << "Ban muon lam gi: ";
         cin>>n;
 	    system("cls");
 	    if (n==1) {  
             m->XemMenu();
             string nhan;
-            cout<<"BAN: ";cin>>soban;
+            cout<<"Ban: ";cin>>soban;
             while (soban < 1 || soban > 25) {
-                cout<<"\nERROR! TRY AGAIN\n";
-                cout<<"BAN: ";
+                cout<<"\nLoi! Thu lai\n";
+                cout<<"Ban: ";
                 cin >> soban;
             };
-            cout<<"\n\nPRESS ANY KEY TO ORDER ";
+            cout<<"\n\nNhan phim bat ky de order: ";
             cin>>nhan;
             d->ChonMenu();
             d->XuatOrder();
-            break;
 	    }
 	    else if (n==2) {
             m->ThemMenu();
-            break;
+            
 	    }
         else if(n==3) {
             LICH_SU_BAN_HANG(); 
         }
+        else if (n == 4) {
+            break;
+        }
 	    else {
-            cout<<"ERROR! TRY AGAIN \n\n\n               1 -> XEM MENU \n\n               2 -> THEM MON AN VAO MENU \n\n               3 -> TRUY XUAT LICH SU BAN HANG\n\n";
+            cout<<"Loi! Thu lai \n\n\n               1 -> Xem Menu \n\n               2 -> Them mon an vao menu \n\n               3 -> Truy xuat lich su ban hang\n\n               4 -> Ket thuc\n\n";
         }
     };
 }
 
 //ham main
 int main () {
-    int soluong;
+    int chucvu;
     KhachHang *kh;
     ThanhToan *tt;
+    MENU *m;
+    Order *d;
+    
 
-    cout << "Nhap so luong khach hang: ";
-    cin >> soluong;
+    cout << "=============== Chuc Vu =============== \n\n\n               1 -> Thu Ngan \n\n               2 -> Phuc Vu \n\n";
+    cout << "Chuc vu cua ban la: ";
+    cin >> chucvu;
 
-    kh = new KhachHang [soluong];
-    tt = new ThanhToan [soluong];
-
-    NhapThongTin (kh, tt, soluong);
-
-    XuatThongTin (kh, tt, soluong);
-
-    GhiFile (kh, tt, soluong);
-
-    MENU *m = new MENU();
-    Order *d = new Order();
-	cout<<"=============== PRESS THE CORRECT NUMBER =============== \n\n\n               1 -> XEM MENU \n\n               2 -> THEM MON AN VAO MENU \n\n               3 -> TRUY XUAT LICH SU BAN HANG\n\n";
-	
-    int n;
-    int a = 1;
-
-    MenuOrder (m, d, n, a);
+    system("cls");
+    if (chucvu == 1) {
+        ThuNgan (kh, tt);
+    }
+    else if (chucvu == 2) {
+        m = new MENU ();
+        d = new Order ();
+    
+        PhucVu (m, d);
+    }
 
 	delete m;
     delete d;
