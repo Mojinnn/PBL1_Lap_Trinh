@@ -7,7 +7,7 @@
 #include <ctime>
 using namespace std;
 int soban;
-string time () 
+string ThoiGian () 
 {
     char *dt= new char[10];
     time_t now = time(0);
@@ -117,7 +117,7 @@ void Order::ChonMenu()
     fstream savetofile;
     savetofile.open("LICHSUBANHANG.txt", ios::app);
     savetofile<<"========== BAN: "<<soban<<" \n";
-    savetofile << "---------- Thoi gian: "<<time();
+    savetofile << "---------- Thoi gian: "<< ThoiGian();
     savetofile.close();
     cout<<"------------------------------------------------------------------------------------------------------------------------------------------------------------\n";
     cout<<"\n     Nhap so thu tu va so luong mon an \n\n";  
@@ -171,7 +171,7 @@ void Order::XuatOrder()
     fstream Xuat_Order;
     cout<<"========== Ban: "<<soban<<" \n";
     Xuat_Order.open("XuatOrder.txt", ios::in);
-    cout << "---------- Thoi gian: "<<time();
+    cout << "---------- Thoi gian: "<< ThoiGian();
     cout<<"\n \nDanh sach mon an da chon: \n";
     while (!Xuat_Order.eof())
     {
