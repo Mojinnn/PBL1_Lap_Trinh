@@ -62,7 +62,6 @@ void DocHoaDonVaGhiDoanhThu () {
     string line;
     ifstream file;
     file.open("HoaDon.txt", ios::in);
-        cout << "------ Thoi gian: "<< ThoiGian() << endl;
         while (!file.eof()) {
             getline (file, line);
             cout << line << endl;
