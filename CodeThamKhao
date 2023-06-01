@@ -1,0 +1,14 @@
+//Ham hien thi thoi gian
+
+#include <iostream>
+#include <cmath>
+#include <cstdio>
+using namespace std;
+int main() {
+  //khai báo biến curr_time để hiển thị ngày giờ hiện tại
+  time_t curr_time;
+  curr_time = time(NULL);
+  //sử dụng hàm ctime để chuyển đổi sang dạng localtime rồi hiển thị dưới dạng ký tự
+  char *tm = ctime(&curr_time);
+  cout << tm;
+}
