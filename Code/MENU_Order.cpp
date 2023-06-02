@@ -7,14 +7,14 @@
 #include <ctime>
 using namespace std;
 int soban;
-string ThoiGian () 
-{
-    char *dt= new char[10];
+
+//ham hien thi thoi gian
+string ThoiGian () {
     time_t now = time(0);
-    dt = ctime(&now);
-    string currentTime(dt);
+    string currentTime = ctime(&now);
     return currentTime;
-};
+}
+
 class MENU
 {
     private:

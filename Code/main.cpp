@@ -8,13 +8,6 @@
 
 using namespace std;
 
-//ham hien thi thoi gian
-string ThoiGian () {
-    time_t now = time(0);
-    string currentTime = ctime(&now);
-    return currentTime;
-}
-
 //ham Nhap thong tin tung doi tuong
 void NhapThongTin (KhachHang *kh, ThanhToan *tt, int &soluong) {
     for (int i = 0; i < soluong; i++) {
@@ -49,6 +42,7 @@ void GhiHoaDon (KhachHang *kh, ThanhToan *tt, int &soluong) {
             file << "Ve: " << tt[i].getGiaVe () << endl;
             file << "Phi: " << tt[i].getPhi () << endl;
             file << "Thue: " << tt[i].getThue () << endl;
+            file << "Thanh Tien: " << tt[i].ThanhTien() << endl;
         }
         file << "--------------------------------------" << endl;
         file << "Khuyen Mai: " << KhuyenMai (kh, tt, soluong) << endl;
