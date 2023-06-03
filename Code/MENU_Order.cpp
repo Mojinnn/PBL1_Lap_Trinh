@@ -10,8 +10,10 @@ int soban;
 
 //ham hien thi thoi gian
 string ThoiGian () {
+   char *dt= new char[10];
     time_t now = time(0);
-    string currentTime = ctime(&now);
+    dt = ctime(&now);
+    string currentTime(dt);
     return currentTime;
 }
 
