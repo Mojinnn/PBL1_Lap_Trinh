@@ -151,28 +151,34 @@ void PhucVu (MENU *m, Order *d) {
 
 //ham main
 int main () {
-    int chucvu;
     KhachHang *kh;
     ThanhToan *tt;
     MENU *m;
     Order *d;
     
+    unsigned int chucvu = 1;
 
-    cout << "=============== Chuc Vu =============== \n\n\n               1 -> Thu Ngan \n\n               2 -> Phuc Vu \n\n";
-    cout << "Chuc vu cua ban la: ";
-    cin >> chucvu;
+    while (chucvu < -1) {
+        cout << "=============== Chuc Vu =============== \n\n\n               1 -> Thu Ngan \n\n               2 -> Phuc Vu \n\n";
+        cout << "Chuc vu cua ban la: ";
+        cin >> chucvu;
 
-    system("cls");
-    if (chucvu == 1) {
-        ThuNgan (kh, tt);
+        system("cls");
+        if (chucvu == 1) {
+            ThuNgan (kh, tt);
+            break;
+        }
+        else if (chucvu == 2) {
+            m = new MENU ();
+            d = new Order ();
+            PhucVu (m, d);
+            break;
+        }
+        else {
+            cout << "Loi ! Thu lai" << endl;
+        }
     }
-    else if (chucvu == 2) {
-        m = new MENU ();
-        d = new Order ();
     
-        PhucVu (m, d);
-    }
-
 	delete m;
     delete d;
 
