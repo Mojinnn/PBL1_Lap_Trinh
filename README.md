@@ -92,9 +92,13 @@ Trong thời đại hiện nay, việc quản lý dữ liệu bằng các phươ
 
 ![Picture12.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture12.png)
 - Nếu chọn `Kết thúc` ở bất kì lúc nào, chương trình sẽ ngừng ngay lập tức
+---
+## *Xin gửi lời cảm ơn đến:*
+- Giáo viên hướng dẫn: TS. Nguyễn Duy Nhật Viễn
+- Tất cả các bạn đã trải nghiệm thử dự án và đưa ra đánh giá
+---
+---
 
-
-Trần Anh Toàn<br>Lê Thị Hải Yến
 
 
 
