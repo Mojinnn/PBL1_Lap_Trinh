@@ -56,7 +56,7 @@ Trong thời đại hiện nay, việc quản lý dữ liệu bằng các phươ
 ---
 ## **KẾT QUẢ CHẠY CHƯƠNG TRÌNH**
 - Đầu tiên chương trình sẽ hỏi chức vụ
-![1](Picture1.png )
+![1]([Picture1.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture1.png) )
 - Nếu là `Thu ngân` sẽ có 3 sự lựa chọn. Nhập khác ba số trên, chương trình hiển thị "Loi! Thu lai"
 
 ![2](Picture2.png)
