@@ -1,4 +1,4 @@
-# **<span style="color: red">PBL1: DỰ ÁN QUẢN LÝ NHÀ HÀNG BUFFET </span>**
+# **PBL1: DỰ ÁN QUẢN LÝ NHÀ HÀNG BUFFET**
 ---
 ## **GIỚI THIỆU** 
 
@@ -55,35 +55,47 @@ Trong thời đại hiện nay, việc quản lý dữ liệu bằng các phươ
 |Lê Thị Hải Yến     |- Đóng góp ý tưởng để thực hiện dự án<br>- Thực hiện các class Menu và Order<br>- Liên kết class Menu và Order lại với nhau<br>- Thực hiện các hàm chức năng của chương trình<br>- Kiểm tra lỗi và sửa chương trình       |
 ---
 ## **KẾT QUẢ CHẠY CHƯƠNG TRÌNH**
-- Đầu tiên chương trình sẽ hỏi chức vụ
-![1]([Picture1.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture1.png) )
+- Đầu tiên chương trình sẽ hỏi chức vụ 
+
+![Picture1.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture1.png) 
 - Nếu là `Thu ngân` sẽ có 3 sự lựa chọn. Nhập khác ba số trên, chương trình hiển thị "Loi! Thu lai"
 
-![2](Picture2.png)
-  - Nếu chọn "Nhập thông tin khách hàng", chương trình yêu cầu nhập số lượng khách hàng và thông tin từng khách hàng
-![3](Picture3.png)
+![Picture2.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture2.png)
+- Nếu chọn "Nhập thông tin khách hàng", chương trình yêu cầu nhập số lượng khách hàng và thông tin từng khách hàng
+
+![Picture3.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture3.png)
 - Nếu chọn "In hóa đơn", chương trình in ra màn hình tổng hóa đơn của thông tin nhập vào gần nhất
-![4](Picture4.png)
+
+![Picture4.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture4.png)
 - Nếu là `Phục vụ` sẽ có 4 sự lựa chọn. Nhập khác bốn số trên, chương trình hiển thị "Loi! Thu lai"
-![5](Picture5.png)
+
+![Picture5.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture5.png)
 - Nếu chọn "Xem Menu", chương trình in ra màn hình toàn bộ menu
-![6](Picture6.png)
+
+![Picture6.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture6.png)
 - Nhập số bàn để được thực hiện thao tác order
-![7](Picture7.png)
+
+![Picture7.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture7.png)
 - Chọn món và số lượng món
-![8](Picture8.png)
+
+![Picture8.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture8.png)
 - Nhấn `2` để dừng chọn món và xem danh sách các món đã chọn
-![9](Picture9.png)
+
+![Picture9.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture9.png)
 - Nếu chọn "Thêm món ăn vào menu", chương trình sẽ yêu cầu nhập tên món ăn mới
-![10](Picture10.png)
+
+![Picture10.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture10.png)
 - Sau khi nhập, chương trình xác nhận thêm thành công
-![11](Picture11.png)
+
+![Picture11.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture11.png)
 - Nếu chọn "Truy xuất lịch sử bán hàng", chương trình in ra màn hình toàn bộ dữ liệu bán hàng đã có
-![12](Picture12.png)
+
+![Picture12.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture12.png)
 - Nếu chọn `Kết thúc` ở bất kì lúc nào, chương trình sẽ ngừng ngay lập tức
-<div style = "float: right">
+
+
 Trần Anh Toàn<br>Lê Thị Hải Yến
-</div>
+
 
 
 
