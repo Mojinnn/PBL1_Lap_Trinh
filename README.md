@@ -57,40 +57,40 @@ Trong thời đại hiện nay, việc quản lý dữ liệu bằng các phươ
 ## **KẾT QUẢ CHẠY CHƯƠNG TRÌNH**
 - Đầu tiên chương trình sẽ hỏi chức vụ 
 
-![Picture1.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture1.png) 
+![Picture1.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture1.png)
 - Nếu là `Thu ngân` sẽ có 3 sự lựa chọn. Nhập khác ba số trên, chương trình hiển thị "Loi! Thu lai"
 
-![Picture2.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture2.png)
+![Picture2.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture2.png)
 - Nếu chọn "Nhập thông tin khách hàng", chương trình yêu cầu nhập số lượng khách hàng và thông tin từng khách hàng
 
-![Picture3.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture3.png)
+![Picture3.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture3.png)
 - Nếu chọn "In hóa đơn", chương trình in ra màn hình tổng hóa đơn của thông tin nhập vào gần nhất
 
-![Picture4.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture4.png)
+![Picture4.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture4.png)
 - Nếu là `Phục vụ` sẽ có 4 sự lựa chọn. Nhập khác bốn số trên, chương trình hiển thị "Loi! Thu lai"
 
-![Picture5.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture5.png)
+![Picture5.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture5.png)
 - Nếu chọn "Xem Menu", chương trình in ra màn hình toàn bộ menu
 
-![Picture6.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture6.png)
+![Picture6.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture6.png)
 - Nhập số bàn để được thực hiện thao tác order
 
-![Picture7.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture7.png)
+![Picture7.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture7.png)
 - Chọn món và số lượng món
 
-![Picture8.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture8.png)
+![Picture8.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture8.png)
 - Nhấn `2` để dừng chọn món và xem danh sách các món đã chọn
 
-![Picture9.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture9.png)
+![Picture9.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture9.png)
 - Nếu chọn "Thêm món ăn vào menu", chương trình sẽ yêu cầu nhập tên món ăn mới
 
-![Picture10.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture10.png)
+![Picture10.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture10.png)
 - Sau khi nhập, chương trình xác nhận thêm thành công
 
-![Picture11.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture11.png)
+![Picture11.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture11.png)
 - Nếu chọn "Truy xuất lịch sử bán hàng", chương trình in ra màn hình toàn bộ dữ liệu bán hàng đã có
 
-![Picture12.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture12.png)
+![Picture12.png](https://github.com/Mojinnn/PBL1_Lap_Trinh/blob/master/Video/Picture/Picture12.png)
 - Nếu chọn `Kết thúc` ở bất kì lúc nào, chương trình sẽ ngừng ngay lập tức
 
 
