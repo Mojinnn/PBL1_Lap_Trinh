@@ -3,7 +3,7 @@
 ## **GIỚI THIỆU** 
 
 Trong thời đại hiện nay, việc quản lý dữ liệu bằng các phương pháp thủ công đang dần trở lên lạc hậu và khó để kiểm soát, nhất là vào những giờ cao điểm, những ngày lễ. Đặc biệt là với một nhà hàng buffet, việc quản lý khách hàng, nguyên liệu, thức ăn là một điều khó khăn. Vì vậy, dựa trên những kiến thức từ các môn học nền tảng (Đại cương Kĩ thuật máy tính, Lập trình hướng đối tượng) và ngôn ngữ lập trình C++, chúng em đã xây dựng một chương trình quản lý đơn giản để dễ dàng trong việc order món ăn, lưu trữ thông tin khách hàng và thanh toán. Qua đó mang lại trải nghiệm tốt hơn cho khách hàng.
-Ở đây chúng em hướng dự án này đến các nhà hàng phục vụ theo hình thức buffet nhưng diện tích mặt bằng nhỏ. Mỗi đối tượng khách hàng sẽ có một mức giá vé khác nhau (dựa vào số tuổi và chiều cao) cùng với những khoản phí và thuế phát sinh, tuy nhiên vẫn có những ưu đãi, khuyến mãi cho khách hàng. Các món ăn sẽ được khách hàng chọn trên menu, sau đó nhà hàng chế biến ở trong bếp và phục vụ cho thực khách tại bàn (trừ nước uống và đồ tráng miệng).
+<br>Ở đây chúng em hướng dự án này đến các nhà hàng phục vụ theo hình thức buffet nhưng diện tích mặt bằng nhỏ. Mỗi đối tượng khách hàng sẽ có một mức giá vé khác nhau (dựa vào số tuổi và chiều cao) cùng với những khoản phí và thuế phát sinh, tuy nhiên vẫn có những ưu đãi, khuyến mãi cho khách hàng. Các món ăn sẽ được khách hàng chọn trên menu, sau đó nhà hàng chế biến ở trong bếp và phục vụ cho thực khách tại bàn (trừ nước uống và đồ tráng miệng).
 
 ---
 ## **CÁC TÍNH NĂNG CỦA CHƯƠNG TRÌNH**
